@@ -2,11 +2,11 @@
 #ifndef FIXED_HPP
 # define FIXED_HPP
 
-#include "iostream"
+# include "iostream"
 
 class Fixed {
 	private:
-		int					_nbr;
+		int					_fp_nbr;
 		static const int	_fbit_count = 8;
 	public:
 		Fixed(void);
