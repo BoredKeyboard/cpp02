@@ -6,7 +6,7 @@
 /*   By: mforstho <mforstho@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/22 15:26:40 by mforstho      #+#    #+#                 */
-/*   Updated: 2023/03/27 16:06:18 by mforstho      ########   odam.nl         */
+/*   Updated: 2023/03/27 17:22:42 by mforstho      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,8 +53,8 @@ int main( void ) {
 	std::cout << "(b != a):    " << (b != a) << std::endl;
 	std::cout << std::endl;
 
-	std::cout << "(a + 1): " << (a + 1) << std::endl;
-	std::cout << "(b - 1): " << (b - 1) << std::endl;	// 1 getal extra achter komma?
+	std::cout << "(a + 1)  : " << (a + 1) << std::endl;
+	std::cout << "(b - 1)  : " << (b - 1) << std::endl;
 	std::cout << "(b * 2)  : " << (b * 2) << std::endl;
 	std::cout << "(b / 2)  : " << (b / 2) << std::endl;
 	std::cout << std::endl;
