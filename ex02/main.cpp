@@ -6,12 +6,11 @@
 /*   By: mforstho <mforstho@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/22 15:26:40 by mforstho      #+#    #+#                 */
-/*   Updated: 2023/03/27 15:27:42 by mforstho      ########   odam.nl         */
+/*   Updated: 2023/03/27 16:06:18 by mforstho      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
-#include <iostream>
 
 int main( void ) {
 	Fixed a;
