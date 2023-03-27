@@ -13,30 +13,35 @@ class Fixed {
 		Fixed(void);
 		Fixed(Fixed const &src);
 		~Fixed(void);
-		Fixed & operator=(Fixed const &src);
-		int getRawBits(void) const;
-		void setRawBits(int const raw);
+		Fixed &	operator=(Fixed const &src);
+		int		getRawBits(void) const;
+		void	setRawBits(int const raw);
 
 		Fixed(const int n);
 		Fixed(const float f);
 		float	toFloat(void) const;
 		int		toInt(void) const;
 
-		Fixed & operator>(Fixed const &src);
-		Fixed & operator<(Fixed const &src);
-		Fixed & operator>=(Fixed const &src);
-		Fixed & operator<=(Fixed const &src);
-		Fixed & operator==(Fixed const &src);
-		Fixed & operator!=(Fixed const &src);
-		Fixed & operator+(Fixed const &src);
-		Fixed & operator-(Fixed const &src);
-		Fixed & operator*(Fixed const &src);
-		Fixed & operator/(Fixed const &src);
+		bool	operator>(Fixed const &rhs) const;
+		bool	operator<(Fixed const &rhs) const;
+		bool	operator>=(Fixed const &rhs) const;
+		bool	operator<=(Fixed const &rhs) const;
+		bool	operator==(Fixed const &rhs) const;
+		bool	operator!=(Fixed const &rhs) const;
+		Fixed	operator+(Fixed const &rhs) const;
+		Fixed	operator-(Fixed const &rhs) const;
+		Fixed	operator*(Fixed const &rhs) const;
+		Fixed	operator/(Fixed const &rhs) const;
 
-		static int min(int &n1, int &n2);
-		static const int min(int const &n1, int const &n2);
-		static int max(int &n1, int &n2);
-		static int const max(int const &n1, int const &n2);
+		Fixed	operator++(int);
+		Fixed	&operator++();
+		Fixed	operator--(int);
+		Fixed	&operator--();
+
+		static Fixed 		&min(Fixed &n1, Fixed &n2);
+		static const Fixed	&min(Fixed const &n1, Fixed const &n2);
+		static Fixed		&max(Fixed &n1, Fixed &n2);
+		static const Fixed	&max(Fixed const &n1, Fixed const &n2);
 };
 
 std::ostream &operator<<(std::ostream &os, Fixed const &src);
